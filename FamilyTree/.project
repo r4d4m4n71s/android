@@ -33,14 +33,9 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>assets</name>
-			<type>2</type>
-			<location>E:/proyectos/fuentes/eclipseWorkspace/FamilyTree/src/main/assets</location>
-		</link>
-		<link>
 			<name>res</name>
 			<type>2</type>
-			<location>E:/proyectos/fuentes/eclipseWorkspace/FamilyTree/src/main/res</location>
+			<location>E:/proyectos/fuentes/repositorios/git/FamilyTree/src/main/res</location>
 		</link>
 	</linkedResources>
 </projectDescription>
