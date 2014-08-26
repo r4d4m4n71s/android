@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bebamos!</string>
+    <string name="description">Agita el teléfono para beber</string>
+    <string name="drink">Bebe</string>
+    <string name="drink_double">Bebe dos</string>
+    <string name="drink_left">Bebe la izquierda</string>
+    <string name="drink_right">Bebe la derecha</string>
+    <string name="dright_no">Pasa</string>
+    <string name="shake_your_phone">Sacude tu cel!</string>
+    <string name="drink_all">Todos beben</string>
+</resources>
+

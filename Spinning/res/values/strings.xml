@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Let\'s drink!</string>
+    <string name="description">Shake the phone for drinking</string>
+    <string name="drink">Drink</string>
+    <string name="drink_double">Drink double</string>
+    <string name="drink_left">Drink left</string>
+    <string name="drink_right">Drink right</string>
+    <string name="dright_no">Pass</string>
+    <string name="shake_your_phone">Shake your phone!</string>
+    <string name="drink_all">Drink every body</string>
+</resources>
+
