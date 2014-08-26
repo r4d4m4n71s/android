@@ -1,0 +1,53 @@
+apply plugin: 'android'
+apply plugin: 'robolectric'
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:0.12.+'
+        classpath 'org.robolectric:robolectric-gradle-plugin:0.12.+'
+    }
+}
+
+allprojects {
+    repositories {
+        mavenCentral()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    }
+}
+
+android {
+    compileSdkVersion 20
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "com.familytree"
+        minSdkVersion 16
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+    }
+    sourceSets {
+        main {
+              manifest.srcFile 'AndroidManifest.xml'
+              java.srcDirs = ['src/main/java']
+              resources.srcDirs = ['src/main/resources']
+              res.srcDirs = ['src/main/res']
+              assets.srcDirs = ['src/main/assets']
+        }
+        instrumentTest.setRoot('src/test')
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile 'org.robolectric:robolectric:2.+'
+    androidTestCompile 'junit:junit:4.+'
+}
+
+task createWrapper(type: Wrapper) {
+    gradleVersion = '2.0'
+}
